@@ -1,8 +1,6 @@
 # Use the official R-base image as the base image
 FROM rocker/shiny:latest
 
-RUN yum -y update && yum -y install libcurl-devel openssl-devel libxml2-devel
-
 # Install renv
 RUN R -e "install.packages('renv')"
 
